@@ -38,6 +38,12 @@ module.exports = {
         ]
       },
 
+      devServer: {
+        static: {
+          directory: path.join(__dirname, './'),
+        },
+      },
+
     plugins: [
         new webpack.ProvidePlugin({
             $: "jquery",
